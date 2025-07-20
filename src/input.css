@@ -10,3 +10,30 @@
     --breakpoint-xl: 1280px;    
     --breakpoint-2xl: 1536px;    
 }
+
+
+@layer utilities {
+  .bg-custom-radial {
+    --bg-gradient: radial-gradient(300% 100% at center top, rgba(169, 185, 250, 0.15) 0%, rgba(251, 251, 251, 0) 25%);
+    background-image: var(--bg-gradient);
+  }
+
+  .bg-border-radial{
+    --border-gradient: radial-gradient(at left, #e50e19 50%, #5c79f1 100%);
+    border-image: var(--border-gradient) 1;
+    border-style: solid;
+    border-width: 3px;
+  }
+}
+
+
+ @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-50%); /* Reduced bounce height */
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
+    }
+  }

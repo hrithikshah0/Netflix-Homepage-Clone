@@ -5,6 +5,7 @@
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
+    "tailwindcss-animated": "^2.0.0",
     "tailwindcss-text-fill-stroke": "^2.0.0-beta.3"
   }
 }
